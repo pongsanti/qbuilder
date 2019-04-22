@@ -1,1 +1,3 @@
 # qbuilder
+
+Sqlboiler query builder
