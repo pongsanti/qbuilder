@@ -1,3 +1,3 @@
 # qbuilder
 
-Sqlboiler query builder
+Sqlboiler (https://github.com/volatiletech/sqlboiler) query builder helper class
