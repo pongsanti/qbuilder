@@ -22,8 +22,8 @@ func (b *Builder) WhereString(sqlTemplate string, value string) *Builder {
 	return b
 }
 
-func (b *Builder) WhereDate(sqlTemplate string, value *time.Time) *Builder {
-	if value != nil {
+func (b *Builder) WhereDate(sqlTemplate string, value time.Time) *Builder {
+	if !value.IsZero() {
 		b.queries = append(b.queries, qm.Where(sqlTemplate, value))
 	}
 	return b
